@@ -2,5 +2,6 @@ curl -O -L https://github.com/tsl0922/mpv-menu-plugin/releases/latest/download/m
 
 unzip -o menu.zip -d ./
 mv ./menu/menu.dll ./
-cat ./menu/dialog.lua ./menu/dyn_menu.lua > ./mpv-menu.lua
+mv ./menu/dyn_menu.lua ./mpv-menu.lua
+mv ./menu/dialog.lua ./mpv-dialog.lua
 rm -rf ./menu
